@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Alden Atkinson Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Motion Designer & Animator</p>
-    </header>
-
-    <section class="reel">
-        <h2>Demo Reel</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    <nav>
+        <div class="nav-left">Alden Atkinson</div>
+        <div class="nav-right">
+            <a href="contact.html">Contact Me</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
         </div>
-    </section>
+    </nav>
 
-    <section class="projects">
-        <h2>Portfolio Projects</h2>
-        <div class="grid">
-            <div class="tile">Project 1</div>
-            <div class="tile">Project 2</div>
-            <div class="tile">Project 3</div>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <video id="heroVideo" autoplay muted loop playsinline>
+                <source src="videos/hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
 
-    <footer>
-        <p>© 2025 Your Name</p>
-    </footer>
+        <section class="thumbnails">
+            <div class="thumb" data-video="videos/project1-preview.mp4"></div>
+            <div class="thumb" data-video="videos/project2-preview.mp4"></div>
+            <div class="thumb" data-video="videos/project3-preview.mp4"></div>
+            <div class="thumb" data-video="videos/project4-preview.mp4"></div>
+            <div class="thumb" data-video="videos/project5-preview.mp4"></div>
+            <div class="thumb" data-video="videos/project6-preview.mp4"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
